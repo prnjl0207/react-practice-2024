@@ -16,6 +16,7 @@ const Comp1 = (props) => {
   };
 
   const listItem = ["a", "b", "c", "d", "e", "f", "g", "h", "j", "k"];
+
   // const renderListItem = listItem.map((item) => {
   //   return <li>{item}</li>;
   // });
@@ -23,7 +24,7 @@ const Comp1 = (props) => {
     <>
       <div>
         Hello Comp1 {name} {surname} {city} {state}
-        <button onClick={() => counterHandler()}>Start Counter</button>
+        <button onClick={counterHandler}>Start Counter</button>
         <div>Count value is {counter}</div>
         <input type="text" value={inputValue} onChange={inputOnChange} />
         <div>
