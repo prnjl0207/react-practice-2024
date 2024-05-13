@@ -4,7 +4,7 @@ const Comp1 = (props) => {
   const { name, surname, city, state } = props.data;
   const [counter, setCounter] = useState(0);
   const [inputValue, setInputValue] = useState(" ");
-  console.log("hey props", name);
+  //console.log("hey props", name);
 
   const counterHandler = () => {
     setCounter(counter + 1);
@@ -30,8 +30,8 @@ const Comp1 = (props) => {
           List items is
           {/* <ul>{renderListItem}</ul> */}
           <ul>
-            {listItem.map((item) => (
-              <li>{item}</li>
+            {listItem.map((item, idx) => (
+              <li key={idx}>{item}</li>
             ))}
           </ul>
         </div>
