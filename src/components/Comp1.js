@@ -15,7 +15,10 @@ const Comp1 = (props) => {
     setInputValue(e.target.value.toUpperCase());
   };
 
-  const listItem = ["a,b,c,d,e,f,g,h,j"];
+  const listItem = ["a", "b", "c", "d", "e", "f", "g", "h", "j", "k"];
+  // const renderListItem = listItem.map((item) => {
+  //   return <li>{item}</li>;
+  // });
   return (
     <>
       <div>
@@ -25,10 +28,11 @@ const Comp1 = (props) => {
         <input type="text" value={inputValue} onChange={inputOnChange} />
         <div>
           List items is
+          {/* <ul>{renderListItem}</ul> */}
           <ul>
-            {listItem.map((item) => {
-              return <li>{item}</li>;
-            })}
+            {listItem.map((item) => (
+              <li>{item}</li>
+            ))}
           </ul>
         </div>
       </div>
