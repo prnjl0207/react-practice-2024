@@ -1,12 +1,17 @@
 import "./styles.css";
+import Comp1 from "./components/Comp1";
 
 export default function App() {
+  const data = {
+    name: "pranjal",
+    surname: "verma",
+    city: "greno",
+    state: "up",
+  };
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      <h2>Hello again !!!</h2>
-      <h2>Hello there !!!</h2>
+      <h1>React Practice 2024</h1>
+      <Comp1 data={data} />
     </div>
   );
 }
