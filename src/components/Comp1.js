@@ -20,6 +20,7 @@ const Comp1 = (props) => {
   // const renderListItem = listItem.map((item) => {
   //   return <li>{item}</li>;
   // });
+
   return (
     <>
       <div>
